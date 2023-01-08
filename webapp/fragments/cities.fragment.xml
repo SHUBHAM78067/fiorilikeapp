@@ -1,0 +1,44 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:smartTable="sap.ui.comp.smarttable">
+   
+    <Select items="{/cities}">
+        <items>
+            <core:Item key="{NAME}" text="{NAME}" />
+        </items>
+    </Select>
+    <Select items="{/pincode}">
+        <items>
+            <core:Item key="{pincode}" text="{pincode}" />
+        </items>
+    </Select>
+    <Select items="{/pincode}">
+        <items>
+            <core:Item key="{officeName}" text="{officeName}" />
+        </items>
+    </Select>
+    <Button id="idBtn" text="progress" type="Accept" press="onSave" />
+
+    <Table id="idTable1">
+        <columns>
+            <Column>
+                <header>
+                    <Label text="plant" />
+                </header>
+            </Column>
+        </columns>
+        <columns>
+            <Column>
+                <header>
+                    <Label text="state" />
+                </header>
+            </Column>
+        </columns>
+        <columns>
+            <Column>
+                <header>
+                    <Label text="pincode" />
+                </header>
+            </Column>
+        </columns>
+    </Table>
+   
+</core:FragmentDefinition>
